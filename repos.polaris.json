@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "Perf",
-      "repo": "https://github.com/Ariden24/android_kernel_xiaomi_sdm845",
-      "branch": "12.1-bk",
+      "name": "Nitro-Gas",
+      "repo": "https://github.com/Ariden24/android_kernel_xiaomi_MIMIX2S",
+      "branch": "12.1",
       "device": "polaris",
       "defconfig": "polaris_defconfig"
     },
