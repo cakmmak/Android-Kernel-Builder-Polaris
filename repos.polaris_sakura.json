@@ -5,7 +5,7 @@
       "repo": "https://github.com/Ariden24/android_kernel_xiaomi_polaris",
       "branch": "Sakura",
       "device": "polaris",
-      "defconfig": "polaris_defconfig"
+      "defconfig": "sakura_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
