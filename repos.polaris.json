@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "NitroGas",
       "repo": "https://github.com/Ariden24/android_kernel_xiaomi_MIMIX2S",
-      "branch": "12.1",
+      "branch": "12.1-mod",
       "device": "polaris",
       "defconfig": "polaris_defconfig"
     },
