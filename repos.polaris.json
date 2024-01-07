@@ -27,7 +27,7 @@
         "LD": "clang13/clang/host/linux-x86/clang-r428724/bin/ld.lld",
         "OBJCOPY": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-objcopy",
         "OBJDUMP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-objdump",
-        "STRIP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-strip"
+        "STRIP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-strip",
         "LLVM_AR": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-ar"
       }
     },
