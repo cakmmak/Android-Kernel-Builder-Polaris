@@ -19,7 +19,6 @@
     "params": {
       "ARCH": "arm64",
       "CC": "clang13/clang/host/linux-x86/clang-r428724/bin/clang",
-      "O":"out",
       "externalCommand": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "clang13/linaro-gcc-4.9/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
