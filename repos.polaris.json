@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "D8G",
-      "repo": "https://github.com/diphons/D8G_Kernel",
-      "branch": "main",
-      "device": "polaris",
-      "defconfig": "polaris_defconfig"
+      "repo": "https://github.com/MoeKernel/android_kernel_xiaomi_ginkgo",
+      "branch": "thirteen",
+      "device": "ginkgo-stock",
+      "defconfig": "ginkgo-stock_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
