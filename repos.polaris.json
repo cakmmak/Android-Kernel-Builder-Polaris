@@ -1,41 +1,45 @@
 [
   {
     "kernelSource": {
-      "name": "D8G",
-      "repo": "https://github.com/MoeKernel/android_kernel_xiaomi_ginkgo",
-      "branch": "thirteen",
-      "device": "ginkgo-stock",
-      "defconfig": "ginkgo-stock_defconfig"
+      "name": "DogDay-KernelSU-Proton-release",
+      "repo": "https://codeberg.org/DogDayAndroid/android_kernel_xiaomi_thyme",
+      "branch": "lineage-20.0",
+      "device": "thyme",
+      "defconfig": "thyme_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/Ariden24/android-kernel-tools-clang-13",
-        "branch": "clang13",
-        "name": "clang13",
-        "binPath": ["./bin"]
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
+        "binPath": ["bin"]
       }
     ],
     "params": {
       "ARCH": "arm64",
-      "CC": "clang13/clang/host/linux-x86/clang-r428724/bin/clang",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "clang13/linaro-gcc-4.9/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "clang13/linaro-gcc-4.9/arm-linux-gnueabi/bin/arm-linux-gnueabi-",
-        "AS": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-as",
-        "LD": "clang13/clang/host/linux-x86/clang-r428724/bin/ld.lld",
-        "OBJCOPY": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-objcopy",
-        "OBJDUMP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-objdump",
-        "STRIP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-strip",
-        "LLVM_AR": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-ar"
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Ariden24/AnyKernel3",
-      "branch": "master"
+      "repo": "https://github.com/easterNday/AnyKernel3/",
+      "branch": "thyme"
     }
   }
 ]
