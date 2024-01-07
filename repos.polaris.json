@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "Nitro-Gas",
-      "repo": "https://github.com/Ariden24/android_kernel_xiaomi_MIMIX2S",
-      "branch": "12.1",
+      "name": "D8G",
+      "repo": "https://github.com/diphons/D8G_Kernel",
+      "branch": "main",
       "device": "polaris",
       "defconfig": "polaris_defconfig"
     },
